@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #f5f4f3;
+}
+
 .container {
   margin: 0 auto;
   width: 1440px;
@@ -62,6 +66,11 @@
   width: 16px;
   height: 16px;
   margin-left: 10px;
+}
+
+.filter-item_arrow {
+  width: 16px;
+  height: 16px;
 }
 
 .hero {
@@ -112,4 +121,128 @@
   line-height: 28px;
   color: #ffffff;
   padding-top: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 155px;
+  gap: 32px;
+}
+
+.section-title {
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  color: #000706;
+  letter-spacing: -0.8px;
+  padding-top: 60px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dropdown-filters-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters-items {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  border: 1px solid rgba(0, 7, 6, 0.4);
+  border-radius: 5px;
+  padding: 1px 20px;
+  gap: 6.5px;
+}
+
+.filter-item:hover {
+  background-color: #0a514c;
+  cursor: pointer;
+}
+
+.filter-item:hover .filter-item_textcontent {
+  color: #ffffff;
+}
+
+.filter-item:hover .filters-ico {
+  background-image: url('./img/filters-ico-white.svg');
+}
+
+.filter-item_textcontent {
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #000706;
+}
+
+.filters-ico {
+  background-image: url('./img/filters-ico-black.svg');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.active-filters-area {
+  display: flex;
+  gap: 24px;
+}
+
+.active-filters-items {
+  display: flex;
+  gap: 4px;
+}
+
+.active-filter-item {
+  display: flex;
+  align-items: center;
+  background-color: #d9e3e3;
+  height: 28px;
+  border-radius: 3px;
+  padding: 8px 10px 8px 12px;
+  gap: 9px;
+}
+
+.active-filter_textcontent {
+  font-family: 'Poppins-regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #000706;
+}
+
+.active-filter-item_cross {
+  width: 16px;
+  height: 16px;
+  background-image: url('./img/cross.svg');
+  background-repeat: no-repeat;
+}
+
+.active-filter-item_cross:hover {
+  cursor: pointer;
+}
+
+#clear-all-btn {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-family: 'Poppins-regular', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #000706;
+  text-align: end;
+  padding: 5px 0px;
+}
+
+#clear-all-btn:hover {
+  cursor: pointer;
 }
