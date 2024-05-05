@@ -49,28 +49,69 @@ body {
 }
 
 .nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-item_link,
+.dropdown-item_link {
+  display: flex;
+  gap: 10px;
   font-family: 'Poppins', 'Arial', sans-serif;
   padding: 6px 12px;
   font-size: 16px;
   line-height: 22.4px;
   font-weight: 400;
   color: #000706;
+  text-decoration: none;
+}
+
+.dropdown-item_link {
+  color: #ffffff;
+}
+
+.dropdown-item_link:hover {
+  background-color: #ffffff;
+  color: #000706;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+}
+
+.dropdown-items {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none;
+  background-color: #0a514c;
+}
+
+.dropdown-item {
+  display: block;
 }
 
 .nav-item:hover {
-  cursor: pointer;
-  color: green;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  background-color: #0a514c;
+}
+
+.nav-item_link:hover {
+  color: #ffffff;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+}
+
+.nav-item_link:hover .arrow-down {
+  background-image: url('./img/arrow-up.svg');
+  background-position: center;
+}
+
+.nav-item:hover .dropdown-items {
+  display: block;
 }
 
 .arrow-down {
   width: 16px;
   height: 16px;
-  margin-left: 10px;
-}
-
-.filter-item_arrow {
-  width: 16px;
-  height: 16px;
+  background-image: url('./img/arrow-down.svg');
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -109,7 +150,8 @@ body {
 }
 
 .hero-link:hover {
-  color: greenyellow;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  color: #ffe175;
 }
 
 .hero-title {
@@ -168,7 +210,12 @@ body {
 
 .filter-item:hover {
   background-color: #0a514c;
-  cursor: pointer;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+}
+
+.filter-item:hover .arrow-down {
+  background-image: url('./img/arrow-up.svg');
+  background-position: center;
 }
 
 .filter-item:hover .filter-item_textcontent {
@@ -228,7 +275,7 @@ body {
 }
 
 .active-filter-item_cross:hover {
-  cursor: pointer;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 #clear-all-btn {
@@ -244,5 +291,5 @@ body {
 }
 
 #clear-all-btn:hover {
-  cursor: pointer;
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
 }

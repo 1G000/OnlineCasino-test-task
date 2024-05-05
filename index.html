@@ -14,11 +14,17 @@
             <nav class="nav">
                 <img class="logo" alt="logo" src="./img/logo.svg"></img>
                 <ul class="nav-items">
-                    <li class="nav-item">Bonus</li>
-                    <li class="nav-item">Casinos<img class="arrow-down" src="./img/arrow-down.svg" alt=""></li>
-                    <li class="nav-item">Spieler</li>
-                    <li class="nav-item">WIN 24 Club</li>
-                    <li class="nav-item">Karriere</li>
+                    <li class="nav-item"><a class="nav-item_link" href="#">Bonus</a></li>
+                    <li class="nav-item"><a class="nav-item_link" href="#">Casinos<span class="arrow-down"></span></a>
+                        <ul class="dropdown-items">
+                            <li class="dropdown-item"><a class="dropdown-item_link" href="#">Casino #1</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item_link" href="#">Casino #2</a></li>
+                            <li class="dropdown-item"><a class="dropdown-item_link" href="#">Casino #3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-item_link" href="#">Spieler</a></li>
+                    <li class="nav-item"><a class="nav-item_link" href="#">WIN 24 Club</a></li>
+                    <li class="nav-item"><a class="nav-item_link" href="#">Karriere</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -34,12 +40,15 @@
             <div class="filters">
                 <div class="dropdown-filters-area">
                     <ul class="filters-items">
-                        <li class="filter-item"><span class="filter-item_textcontent">Deposit Methoden</span><img
-                                class="filter-item_arrow" src="./img/arrow-down.svg" alt=""></li>
-                        <li class="filter-item"><span class="filter-item_textcontent">Lizenzen</span><img
-                                class="filter-item_arrow" src="./img/arrow-down.svg" alt=""></li>
-                        <li class="filter-item"><span class="filter-item_textcontent">Bonusprogramm</span><img
-                                class="filter-item_arrow" src="./img/arrow-down.svg" alt=""></li>
+                        <li class="filter-item"><span class="filter-item_textcontent">Deposit Methoden</span>
+                            <div class="arrow-down">
+                        </li>
+                        <li class="filter-item"><span class="filter-item_textcontent">Lizenzen</span>
+                            <div class="arrow-down">
+                        </li>
+                        <li class="filter-item"><span class="filter-item_textcontent">Bonusprogramm</span>
+                            <div class="arrow-down">
+                        </li>
                     </ul>
                     <button type="button" id="all-filters-btn" class="filter-item">
                         <div class="filters-ico"></div><span class="filter-item_textcontent">All
