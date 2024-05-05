@@ -51,6 +51,7 @@ body {
 .nav-item {
   display: inline-block;
   position: relative;
+  transition: background-color 0.5s ease;
 }
 
 .nav-item_link,
@@ -89,18 +90,21 @@ body {
 }
 
 .nav-item:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
   background-color: #0a514c;
 }
 
 .nav-item_link:hover {
-  color: #ffffff;
   cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
 }
 
-.nav-item_link:hover .arrow-down {
-  background-image: url('./img/arrow-up.svg');
+.nav-item:hover .nav-item_link {
+  color: #ffffff;
+}
+
+.nav-item:hover .arrow-down {
   background-position: center;
+  background-image: url('./img/arrow-up-white.svg');
+  transform: rotate(180deg);
 }
 
 .nav-item:hover .dropdown-items {
@@ -112,6 +116,8 @@ body {
   height: 16px;
   background-image: url('./img/arrow-down.svg');
   background-repeat: no-repeat;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
 }
 
 .hero {
@@ -206,6 +212,7 @@ body {
   border-radius: 5px;
   padding: 1px 20px;
   gap: 6.5px;
+  transition: background-color 0.5s ease;
 }
 
 .filter-item:hover {
@@ -214,8 +221,9 @@ body {
 }
 
 .filter-item:hover .arrow-down {
-  background-image: url('./img/arrow-up.svg');
+  background-image: url('./img/arrow-up-white.svg');
   background-position: center;
+  transform: rotate(180deg);
 }
 
 .filter-item:hover .filter-item_textcontent {
@@ -243,11 +251,16 @@ body {
 .active-filters-area {
   display: flex;
   gap: 24px;
+  height: 27px;
 }
 
 .active-filters-items {
   display: flex;
   gap: 4px;
+}
+
+.active-filter-item_hidden {
+  display: none;
 }
 
 .active-filter-item {
@@ -278,7 +291,12 @@ body {
   cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
 }
 
-#clear-all-btn {
+.clear-all-btn_hidden {
+  display: none;
+}
+
+.clear-all-btn_visible {
+  display: flex;
   background-color: transparent;
   border: none;
   text-decoration: underline;
@@ -290,6 +308,7 @@ body {
   padding: 5px 0px;
 }
 
-#clear-all-btn:hover {
+.clear-all-btn_visible:hover {
   cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  color: #0a514c;
 }
