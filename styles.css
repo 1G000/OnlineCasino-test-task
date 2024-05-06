@@ -133,7 +133,6 @@ body {
 .main-title {
   font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
   text-align: center;
-  font-weight: 600;
   font-size: 72px;
   line-height: 79.2px;
   color: #ffffff;
@@ -404,4 +403,191 @@ input[type='checkbox'] {
   align-self: center;
   color: #0a514c;
   margin-left: 25px;
+}
+
+.casino-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.casino-card-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 12px 16px 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  gap: 8px;
+  border: 2px solid transparent;
+}
+
+.card-item-section_top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 5px;
+}
+
+.first-column {
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #0a514c;
+  line-height: 22.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 40px;
+  background-color: rgba(0, 69, 64, 0.12);
+}
+
+.third-column {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.star-verification {
+  color: #666969;
+}
+
+.rating-value {
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #000706;
+}
+
+.third-column_top {
+  display: flex;
+  gap: 4px;
+}
+
+.third-column_middle {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+  background-color: rgba(246, 245, 244, 0.7);
+  width: 66px;
+  padding: 4px 8px 4px 8px;
+}
+
+.third-column_middle img {
+  margin: 0 3px;
+}
+
+.third-column_bottom {
+  text-decoration: underline;
+  color: #0a514c;
+}
+
+.four-column {
+  display: flex;
+  gap: 8px;
+}
+
+.four-column_left {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 16px;
+  background-color: rgba(246, 245, 244, 0.7);
+  width: 200px;
+  height: 137px;
+  padding: 24px;
+  margin-left: 26px;
+}
+
+.four-column_left-top {
+  background-color: #ffffff;
+  padding: 4px 8px 4px 8px;
+  border-radius: 3px;
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: #000706;
+}
+
+.four-column_left img {
+  width: 132.21px;
+  height: 26px;
+}
+
+.four-column_right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgba(246, 245, 244, 0.7);
+  padding: 24px;
+  gap: 8px;
+}
+
+.four-column_right img {
+  width: 135px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.four-column_right span {
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000706;
+  max-width: 212px;
+}
+
+.five-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn {
+  height: 64px;
+  background-color: #0a514c;
+  border-radius: 5px;
+  padding: 12px 30px 12px 30px;
+  gap: 8px;
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #ffffff;
+}
+
+.play-btn:hover {
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  background-color: #ffe175;
+  color: #0a514c;
+}
+
+.show-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 20px;
+}
+
+.show-more:hover {
+  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+}
+
+.casino-card-item:hover {
+  background-color: rgba(255, 225, 117, 0.15);
+  border: 2px solid #ffe175;
+}
+
+.casino-card-item:hover .first-column {
+  background-color: #ffe175;
+}
+
+.casino-card-item:hover .four-column_right,
+.casino-card-item:hover .four-column_left,
+.casino-card-item:hover .third-column_middle {
+  background-color: #ffffff;
+}
+
+.casino-card-item:hover .four-column_left-top {
+  background-color: rgba(246, 245, 244, 0.7);
 }
