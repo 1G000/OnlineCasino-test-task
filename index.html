@@ -12,7 +12,7 @@
     <div class="container">
         <header>
             <nav class="nav">
-                <img class="logo" alt="logo" src="./img/logo.svg"></img>
+                <img class="logo" alt="logo" src="./img/logo.svg">
                 <ul class="nav-items">
                     <li class="nav-item"><a class="nav-item_link" href="#">Bonus</a></li>
                     <li class="nav-item"><a class="nav-item_link" href="#">Casinos<span class="arrow-down"></span></a>
@@ -29,9 +29,10 @@
             </nav>
             <div class="hero">
                 <h1 class="main-title">Online Casino Österreich - Beste Anbieter 2024</h1>
-                <p class="hero-description">Suchen Sie nach einem guten Online Casino? Bei Casino.at liegen Sie richtig!
+                <p class="hero-description small-text">Suchen Sie nach einem guten Online Casino? Bei Casino.at liegen
+                    Sie richtig!
                     Hier finden Sie alle wichtigen Informationen und Tipps rund um das Casino Spiel im Internet oder in
-                    den <a href="#" class="hero-link">Casinos Austria</a></p>
+                    den <a href="#" class="hero-link small-text">Casinos Austria</a></p>
                 <h3 class="hero-title">Finden Sie die besten Online Casinos in Österreich auf einen Blick!</h3>
             </div>
         </header>
@@ -40,19 +41,79 @@
             <div class="filters">
                 <div class="dropdown-filters-area">
                     <ul class="filters-items">
-                        <li class="filter-item"><span class="filter-item_textcontent">Deposit Methoden</span>
-                            <span class="arrow-down"></span>
+                        <li class="filter-item">
+                            <a class="filter-item_textcontent small-text">Deposit Methoden
+                                <span class="arrow-down"></span>
+                            </a>
                         </li>
-                        <li class="filter-item"><span class="filter-item_textcontent">Lizenzen</span>
-                            <span class="arrow-down"></span>
+                        <li class="filter-item">
+                            <a class="filter-item_textcontent small-text" id="license-btn">Lizenzen
+                                <span class="arrow-down"></span>
+                            </a>
+                            <div class="dropdown dropdown-visible hidden">
+                                <form class="licenses-list">
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Malta Gaming Authority (MGA)
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Gibraltar Gambling Commission
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Curacao eGaming
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Kahnawake Gaming Commission
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Swedish Gambling Authority
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Danish Gambling Authority
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        New Jersey Division of Gaming Enforcement
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Gibraltar Gambling Commission
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Gibraltar Gambling Commission
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Gibraltar Gambling Commission
+                                    </label>
+                                    <label class="small-text">
+                                        <input type="checkbox" class="checkbox">
+                                        Gibraltar Gambling Commission
+                                    </label>
+                                </form>
+                            </div>
                         </li>
-                        <li class="filter-item"><span class="filter-item_textcontent">Bonusprogramm</span>
-                            <span class="arrow-down"></span>
+                        <li class="filter-item">
+                            <a class="filter-item_textcontent small-text">Bonusprogramm
+                                <span class="arrow-down"></span>
+                            </a>
                         </li>
                     </ul>
+                    <a href="#" class="affiliate-disclosure_container hidden">
+                        <span class="affiliate-disclosure small-text">Affilate Disclosure</span>
+                        <img src="img/info-circle.svg" alt="">
+                    </a>
                     <button type="button" id="all-filters-btn" class="filter-item">
-                        <div class="filters-ico"></div><span class="filter-item_textcontent">All
-                            Filters</span>
+                        <a class="filter-item_textcontent small-text">
+                            <div class="filters-ico"></div>All
+                            Filters
+                        </a>
                     </button>
                 </div>
                 <div class="active-filters-area">

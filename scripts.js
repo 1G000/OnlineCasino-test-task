@@ -1,6 +1,33 @@
 const filters = ['Slots', 'A1', 'MGA'];
-const showAllFiltersBtn = document.querySelector('#all-filters-btn');
-const removeAllFiltersBtn = document.querySelector('#clear-all-btn');
+const showAllFiltersBtn = document.getElementById('all-filters-btn');
+const removeAllFiltersBtn = document.getElementById('clear-all-btn');
+const licenseBtn = document.getElementById('license-btn');
+const checkboxes = document.querySelectorAll('.checkbox');
+
+checkboxes.forEach((label) => {
+  const affiliateDisclosure = document.querySelector(
+    '.affiliate-disclosure_container',
+  );
+  label.addEventListener('click', () => {
+    let selectedCheckboxes = document.querySelectorAll(
+      'input[type=checkbox]:checked',
+    );
+    if (!selectedCheckboxes.length) {
+      affiliateDisclosure.classList.add('hidden');
+    } else affiliateDisclosure.classList.remove('hidden');
+  });
+});
+
+document.addEventListener('click', (e) => {
+  const dropdown = document.querySelector('.dropdown');
+  const licenseBtn = document.getElementById('license-btn');
+  if (!dropdown.contains(e.target) && e.target !== licenseBtn) {
+    if (licenseBtn.classList.contains('active')) {
+      licenseBtn.classList.toggle('active');
+    }
+    dropdown.classList.add('hidden');
+  }
+});
 
 const hideRmvAllFitersBtn = () => {
   const activeFilters = document.querySelectorAll('.active-filter-item');
@@ -54,4 +81,10 @@ removeAllFiltersBtn.addEventListener('click', () => {
     filter.classList.remove('active-filter-item');
   });
   hideRmvAllFitersBtn();
+});
+
+licenseBtn.addEventListener('click', () => {
+  const dropdown = document.querySelector('.dropdown');
+  dropdown.classList.toggle('hidden');
+  licenseBtn.classList.toggle('active');
 });
