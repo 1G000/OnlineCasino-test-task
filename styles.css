@@ -73,7 +73,7 @@ body {
 .dropdown-item_link:hover {
   background-color: #ffffff;
   color: #000706;
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 .dropdown-items {
@@ -93,7 +93,7 @@ body {
 }
 
 .nav-item_link:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 .nav-item:hover .nav-item_link {
@@ -153,7 +153,7 @@ body {
 }
 
 .hero-link:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
   color: #ffe175;
 }
 
@@ -212,7 +212,7 @@ body {
 
 .filter-item:hover {
   background-color: #0a514c;
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
   border-radius: 5px;
 }
 
@@ -299,7 +299,7 @@ body {
 }
 
 .active-filter-item_cross:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 .clear-all-btn_hidden {
@@ -320,7 +320,7 @@ body {
 }
 
 .clear-all-btn_visible:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
   color: #0a514c;
 }
 
@@ -360,7 +360,7 @@ body {
 
 .licenses-list:hover label,
 .licenses-list:hover input {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 input[type='checkbox'] {
@@ -397,7 +397,7 @@ input[type='checkbox'] {
 }
 
 .affiliate-disclosure_container:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 .affiliate-disclosure {
@@ -566,7 +566,7 @@ input[type='checkbox'] {
 }
 
 .play-btn:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
   background-color: #ffe175;
   color: #0a514c;
 }
@@ -715,7 +715,7 @@ input[type='checkbox'] {
 
 .show-more:hover,
 .show-more-btn:hover {
-  cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
+  cursor: url('./img/Hand\ \(Pointing\).svg'), pointer;
 }
 
 .casino-card-item:hover {
