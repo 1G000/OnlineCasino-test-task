@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   padding: 0 15px;
 }
 
@@ -152,10 +152,6 @@ body {
   color: #ffffff;
 }
 
-/* .hero-link {
-  padding: 0;
-} */
-
 .hero-link:hover {
   cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
   color: #ffe175;
@@ -176,7 +172,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 155px;
-  gap: 32px;
 }
 
 .section-title {
@@ -197,11 +192,14 @@ body {
 
 .dropdown-filters-area {
   display: flex;
+  margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 .filters-items {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .filter-item {
@@ -284,6 +282,9 @@ body {
   border-radius: 3px;
   padding: 8px 10px 8px 12px;
   gap: 9px;
+  font-family: 'Poppins-regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
 }
 
 .active-filter-item_cross {
@@ -409,6 +410,7 @@ input[type='checkbox'] {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-top: 32px;
 }
 
 .casino-card-item {
@@ -420,11 +422,13 @@ input[type='checkbox'] {
   border-radius: 5px;
   gap: 8px;
   border: 2px solid transparent;
+  transition: background-color 0.3s ease;
 }
 
 .card-item-section_top {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
   border-radius: 5px;
 }
@@ -437,15 +441,18 @@ input[type='checkbox'] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
+  min-width: 24px;
   height: 40px;
   background-color: rgba(0, 69, 64, 0.12);
+  border-radius: 0px 4px 4px 0px;
+  margin-left: -2px;
 }
 
 .third-column {
   display: flex;
   gap: 8px;
   flex-direction: column;
+  margin-right: -12px;
 }
 
 .star-verification {
@@ -480,11 +487,13 @@ input[type='checkbox'] {
 .third-column_bottom {
   text-decoration: underline;
   color: #0a514c;
+  min-width: 159px;
 }
 
 .four-column {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .four-column_left {
@@ -553,6 +562,7 @@ input[type='checkbox'] {
   font-size: 16px;
   line-height: 22.4px;
   color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 .play-btn:hover {
@@ -561,15 +571,150 @@ input[type='checkbox'] {
   color: #0a514c;
 }
 
+.card-item-section_bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 5px;
+  padding: 9px 12px 6px 14px;
+}
+
+.bottom-section_first-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bottom-section_first-column img {
+  width: 20px;
+  height: 20px;
+}
+
+.bottom-section_first-column span {
+  font-family: 'Poppins-regular', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: #000706;
+}
+
+.bottom-section_first-column > span {
+  color: #4d4f4f;
+}
+
+.bottom-section_first-column div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.bottom-section_second-column,
+.bottom-section_third-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bottom-section_first-column div span {
+  display: flex;
+  gap: 4px;
+}
+
+.bottom-section_second-column > div,
+.bottom-section_third-column > div {
+  width: 248px;
+}
+
+.bottom-section_second-column > div,
+.bottom-section_third-column > div {
+  gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-section_second-column > div > div,
+.bottom-section_third-column > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  background-color: rgba(246, 245, 244, 0.7);
+}
+
+.bottom-section_second-column > span,
+.bottom-section_third-column > span {
+  font-family: 'Poppins-regular', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: #4d4f4f;
+}
+
+.bottom-section_four-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 232px;
+}
+
+.bottom-section_four-row {
+  display: flex;
+  gap: 24px;
+}
+
+.bottom-section_four-col1 {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+}
+
+.bottom-section_four-col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.min {
+  display: none;
+}
+
+.regular {
+  font-family: 'Poppins-regular', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: #4d4f4f;
+}
+
+.bold {
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #000706;
+}
+
 .show-more {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 12px;
   height: 20px;
 }
 
-.show-more:hover {
+.show-more .small-text {
+  min-width: 72px;
+}
+
+.show-more .arrow-down {
+  min-width: 16px;
+}
+
+.horizontal-line {
+  display: none;
+}
+
+.show-more:hover,
+.show-more-btn:hover {
   cursor: url('/img/Hand\ \(Pointing\).svg'), pointer;
 }
 
@@ -590,4 +735,37 @@ input[type='checkbox'] {
 
 .casino-card-item:hover .four-column_left-top {
   background-color: rgba(246, 245, 244, 0.7);
+}
+
+.show-more-btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px 12px 24px;
+  background-color: rgba(10, 81, 76, 0.12);
+  font-family: 'Poppins-semi_bold', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #0a514c;
+  margin-top: 8px;
+}
+
+.show-more .small-text,
+.show-more .arrow-down {
+  pointer-events: none;
+}
+
+.pressed {
+}
+
+.show-more.pressed .arrow-down {
+  transform: rotate(180deg);
+}
+
+.show-more.pressed .horizontal-line {
+  display: block;
+  background-color: #e6e6e6;
+  height: 1px;
+  width: 100%;
 }
